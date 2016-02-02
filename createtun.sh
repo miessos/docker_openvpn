@@ -1,3 +1,5 @@
+#! /bin/bash
+touch ~/test2.txt
 [ -d /dev/net ] ||
     mkdir -p /dev/net
 [ -c /dev/net/tun ] ||
