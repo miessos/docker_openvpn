@@ -2,6 +2,8 @@ FROM ubuntu:14.04
 
 MAINTAINER miessos, https://github.com/miessos
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && apt-get install -y wget \
 	openvpn \
 	iptables \
