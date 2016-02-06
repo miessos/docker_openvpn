@@ -7,6 +7,6 @@ RUN touch ~/test.txt \
 
 COPY createtun.sh /usr/local/bin/createtun.sh
 
-CMD bash -C '/usr/local/bin/createtun.sh';'bash'
+CMD bash ["./usr/local/bin/createtun.sh"]
 
 
