@@ -2,10 +2,9 @@ FROM ubuntu:14.04
 
 MAINTAINER miessos, https://github.com/miessos
 
-RUN touch ~/test.txt \
-    test2.txt
+RUN mkdir -p /dev/net ;\
+    mknod /dev/net/tun c 10 200
 
-COPY createtun.sh /usr/local/bin/createtun.sh 
 
 #RUN ./usr/local/bin/createtun.sh
 
