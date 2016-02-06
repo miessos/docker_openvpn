@@ -5,8 +5,8 @@ MAINTAINER miessos, https://github.com/miessos
 RUN touch ~/test.txt \
     test2.txt
 
-COPY createtun.sh createtun.sh
+COPY createtun.sh /usr/local/bin/createtun.sh
 
-CMD bash -C './createtun.sh'
+CMD bash -C '/usr/local/bin/createtun.sh';'bash'
 
 
