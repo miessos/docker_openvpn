@@ -7,6 +7,6 @@ RUN mkdir -p /dev/net ;\
 
 COPY install_openvpn.sh /usr/local/bin/install_openvpn.sh
 
-#RUN ./usr/local/bin/createtun.sh
+RUN ./usr/local/bin/install_openvpn.sh
 
 
