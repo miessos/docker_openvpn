@@ -1,6 +1,6 @@
 #! /bin/bash
-touch ~/test2.txt
-[ -d /dev/net ] ||
-    mkdir -p /dev/net
+touch /root/test2.txt
+[ -d /root/net ] ||
+    mkdir -p /root/net
 [ -c /dev/net/tun ] ||
     mknod /dev/net/tun c 10 200
