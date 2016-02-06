@@ -2,7 +2,11 @@ FROM ubuntu:14.04
 
 MAINTAINER miessos, https://github.com/miessos
 
-RUN apt-get install -y wget
+RUN apt-get update && apt-get install -y wget \
+	openvpn \
+	iptables \
+	openssl \
+	ca-certificates
 
 RUN mkdir -p /dev/net ;\
     mknod /dev/net/tun c 10 200
